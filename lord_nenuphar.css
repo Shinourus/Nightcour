@@ -1037,3 +1037,465 @@ z-index: 100; }
             right: 22%; 
         } 
     }
+
+/* =========================================================
+   NENUPHAR — DARK RUBY / BLACK / GOLD THEME
+   Added theme override — original template preserved
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+/* ---------- BASE ---------- */
+
+html,
+body {
+    background: linear-gradient(
+        135deg,
+        #050304 0%,
+        #0b0507 30%,
+        #21070c 65%,
+        #080305 100%
+    ) !important;
+    background-attachment: fixed !important;
+    color: #eadfca !important;
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    font-size: 16px;
+}
+
+body {
+    background-image:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(122, 16, 26, 0.28),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #050304,
+            #21070c,
+            #080305
+        ) !important;
+    background-attachment: fixed !important;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    color: #d8b84c !important;
+    text-shadow:
+        0 0 8px rgba(201, 162, 39, 0.25),
+        0 2px 4px #000 !important;
+}
+
+h1 {
+    font-size: 64px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 30px !important;
+}
+
+h3 {
+    font-size: 22px !important;
+}
+
+a,
+a:link,
+a:visited {
+    color: #d8b84c !important;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #fff0a6 !important;
+    text-shadow: 0 0 8px rgba(201, 162, 39, 0.65);
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container.main,
+.col-md-9 {
+    background: transparent !important;
+}
+
+.container.main {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ---------- TOPBAR ---------- */
+
+.topbar {
+    background: linear-gradient(
+        90deg,
+        #070406,
+        #32090f,
+        #070406
+    ) !important;
+
+    color: #e5c866 !important;
+    border-bottom: 1px solid #8f6c18 !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    background: linear-gradient(
+        90deg,
+        #090507,
+        #25070c,
+        #090507
+    ) !important;
+
+    color: #e5c866 !important;
+    border-bottom: 1px solid #9b741d !important;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.75) !important;
+}
+
+.navbar li a {
+    color: #dfc76c !important;
+}
+
+.navbar li a:hover {
+    background: #5b0d16 !important;
+    color: #fff0a6 !important;
+}
+
+.navbar-toggle {
+    background: #3a080d !important;
+    border: 1px solid #a57d20 !important;
+}
+
+/* ---------- BREADCRUMB ---------- */
+
+.breadcrumb {
+    background: rgba(10, 4, 6, 0.94) !important;
+    color: #d8b84c !important;
+    border-bottom: 1px solid #704f12 !important;
+}
+
+.breadcrumb .active {
+    color: #eadfca !important;
+}
+
+/* ---------- PANELS ---------- */
+
+.panel,
+.feature,
+div.left {
+    background: linear-gradient(
+        145deg,
+        rgba(12, 7, 9, 0.97),
+        rgba(38, 7, 13, 0.94)
+    ) !important;
+
+    color: #eadfca !important;
+    border: 1px solid #705116 !important;
+    border-radius: 3px !important;
+    box-shadow:
+        inset 0 0 20px rgba(0, 0, 0, 0.45),
+        0 4px 15px rgba(0, 0, 0, 0.55) !important;
+}
+
+/* ---------- TABLES ---------- */
+
+.table,
+.inner-table,
+table#player,
+table#pride {
+    background: transparent !important;
+    color: #eadfca !important;
+}
+
+.top,
+.bottom,
+th {
+    background: linear-gradient(
+        90deg,
+        #17070a,
+        #3a080d,
+        #17070a
+    ) !important;
+
+    color: #e5c866 !important;
+    border-bottom: 1px solid #806017 !important;
+}
+
+.table .left,
+.inner-table .left {
+    background: rgba(18, 7, 10, 0.95) !important;
+    color: #d9cdb7 !important;
+}
+
+.inner-table .right {
+    background: rgba(8, 5, 6, 0.94) !important;
+    color: #eadfca !important;
+}
+
+/* ---------- COMMENTS ---------- */
+
+div#commentBox {
+    background: rgba(10, 5, 7, 0.96) !important;
+    color: #eadfca !important;
+    border: 1px solid #704f12 !important;
+}
+
+.comment {
+    background: rgba(34, 7, 12, 0.9) !important;
+    color: #eadfca !important;
+    border-bottom: 1px solid #4b1118 !important;
+}
+
+.text-muted {
+    color: #ad9f8a !important;
+}
+
+/* ---------- INPUTS / BUTTONS ---------- */
+
+input,
+textarea,
+select,
+button.button,
+a.btn.btn-default.button {
+    background: linear-gradient(
+        180deg,
+        #2d080d,
+        #160507
+    ) !important;
+
+    border: 1px solid #806017 !important;
+    border-radius: 3px !important;
+    color: #eadfca !important;
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    font-size: 16px !important;
+}
+
+button.button:hover,
+a.btn.btn-default.button:hover {
+    background: linear-gradient(
+        180deg,
+        #67101a,
+        #30070d
+    ) !important;
+
+    color: #fff0a6 !important;
+    border-color: #d0a62d !important;
+    box-shadow: 0 0 10px rgba(201, 162, 39, 0.25) !important;
+}
+
+/* ---------- PROGRESS BARS ---------- */
+
+.progress {
+    background: #100609 !important;
+    border: 1px solid #4b1118 !important;
+}
+
+.progress-bar {
+    background: linear-gradient(
+        90deg,
+        #4a080f,
+        #8b1723,
+        #b12a34
+    ) !important;
+}
+
+.progress-bar-warning {
+    background: linear-gradient(
+        90deg,
+        #7b5512,
+        #c59b25
+    ) !important;
+}
+
+.progress-bar-danger {
+    background: linear-gradient(
+        90deg,
+        #5c080f,
+        #a31624,
+        #d13a45
+    ) !important;
+}
+
+.progress-bar-success {
+    background: linear-gradient(
+        90deg,
+        #6d4a10,
+        #c9a227
+    ) !important;
+}
+
+.progress div {
+    color: #f1e5c7 !important;
+}
+
+/* ---------- CHAT ---------- */
+
+button#label_currentChannel,
+.s-chat-sidebar #fraChatChannelMenu,
+button.channelSwitcher,
+button.channelSwitcher.active {
+    background: #1b070b !important;
+    color: #d8b84c !important;
+    border: 1px solid #6f5015 !important;
+}
+
+.s-chat-message {
+    background: rgba(17, 6, 9, 0.96) !important;
+    color: #eadfca !important;
+    border-bottom: 1px solid #391016 !important;
+}
+
+.s-chat-message:nth-child(even) {
+    background: rgba(29, 7, 12, 0.96) !important;
+}
+
+.s-chat-message:nth-child(odd) {
+    background: rgba(12, 5, 7, 0.96) !important;
+}
+
+.s-chat-message_timestamp {
+    color: #9e8d73 !important;
+}
+
+.s-chat-message__pinned {
+    background: #3d0a11 !important;
+    color: #e5c866 !important;
+    border-left: 3px solid #c9a227 !important;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+    background-color: #3e0a11 !important;
+    border-left: 6px solid #c9a227 !important;
+    color: #f0dfb9 !important;
+}
+
+/* ---------- BADGES ---------- */
+
+.badge {
+    background: #7a101a !important;
+    color: #f5df91 !important;
+    border: 1px solid #a37a1d;
+}
+
+/* ---------- CAVES ---------- */
+
+.cave-grid,
+.mound-grid {
+    background: linear-gradient(
+        145deg,
+        #0c0507,
+        #2b080e
+    ) !important;
+
+    color: #e5c866 !important;
+    border: 1px solid #6f5015 !important;
+    border-radius: 3px !important;
+}
+
+/* ---------- FEATURED LION ---------- */
+
+.featured-lion {
+    background: linear-gradient(
+        90deg,
+        #170609,
+        #4a0a12,
+        #170609
+    ) !important;
+
+    color: #e5c866 !important;
+    border: 1px solid #806017 !important;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080405 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #64101a !important;
+    border: 1px solid #9b741d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9b1725 !important;
+}
+
+/* ---------- BOXES ---------- */
+
+.Box1,
+.Box2,
+.Box3 {
+    background: linear-gradient(
+        145deg,
+        rgba(12, 5, 7, 0.97),
+        rgba(48, 7, 13, 0.92)
+    ) !important;
+
+    color: #eadfca !important;
+    border: 1px solid #765616 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    color: #9f917d !important;
+}
+
+.footer a {
+    color: #c9a227 !important;
+}
+
+/* ---------- GOLD DETAILS ---------- */
+
+hr {
+    border-top: 1px solid #684c13 !important;
+    opacity: 0.8;
+}
+
+strong,
+b {
+    color: #e0c45c;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background:
+            linear-gradient(
+                160deg,
+                #050304 0%,
+                #26070d 55%,
+                #080304 100%
+            ) !important;
+        background-attachment: fixed !important;
+    }
+
+    h1 {
+        font-size: 42px !important;
+    }
+
+    .panel,
+    .feature,
+    div.left {
+        border-left: none !important;
+        border-right: none !important;
+    }
+}
