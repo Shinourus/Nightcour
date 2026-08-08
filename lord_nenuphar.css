@@ -1,3 +1,1039 @@
-body {
-    background: red !important;
-}
+/* jester and katie's free css template - 
+made based off of katie's v2 free css template / should be considered v3 
+
+NOTE: THIS IS MADE TO BE AN ULTIMATE TEMPLATE 
+what does this mean? this means there is a lot of stuff in here your average coder 
+just getting into coding css will not use. anyone can use this template, regardless of skill level, 
+but if you're unsure what something may be used for, it may not added with beginners in mind. 
+
+if you're unsure of what something may do, or worried it may break something if you change it, feel free to leave it alone 
+you can change stuff with inspect element to see if it'll help 
+
+you can use this for commissions, for personal use, etc. 
+please do not remove the credit of all the users who went into this, though. 
+
+template made by jester (#187561) & katie (#106445) 
+
+there are a lot of other codes at use here randomly strewn throughout this and various other 
+codes done by the both of us. 
+below is a list of ids credited with other pieces/inspiration for various things in this template 
+just because a user is credited it does not mean their code is used in one specific css made with this template, 
+or even present in this template. however, these are all users who have made significant contributions to css coding 
+and it's almost impossible to ignore what they've done. in some way or the other, they are present in this code 
+Pandora #144118 
+Kat  #94329 
+tawny #251887 
+Austin #43750  
+Bobcat (#79288) 
+Tserin (#2230) 
+Atticus (#198107) 
+
+some helpful terms to keep in mind 
+element - the thing you're editing 
+background - refers to the entire background of the element 
+color - the TEXT color of the element  
+border-radius - the roundness of the borders, for circular elements, set to 50%  
+box-shadow - a shadow behind the element itself. you usually want this set to none.  
+*/ 
+
+/* FONTS - Import from Google Fonts */ 
+
+@import url('FONT LINK'); 
+
+body {font-family: INPUT HERE;} 
+
+.topbar {font-family: INPUT HERE;} 
+
+.navbar {font-family: INPUT HERE;} 
+
+/* BACKGROUNDS  
+The first one is for PC, the second is for mobile. You can also use an image in the second one 
+via replacing #HEX with url('IMG LINK') center center fixed; 
+BUT I recommend repeating patterns rather than full images. */ 
+
+@media screen and (min-width: 601px) {  
+body { 
+background: url('IMG LINK') center center fixed; 
+background-size: 100%; 
+color: #HEX; } } 
+
+@media screen and (max-width: 600px){ 
+body { 
+background: #HEX; 
+background-size: cover; 
+color: #HEX; } } 
+
+/* SCROLL BOXES */ 
+
+::-webkit-scrollbar { 
+width: 7px; 
+height: 7px; } 
+::-webkit-scrollbar-track { 
+background: #HEX;} 
+::-webkit-scrollbar-thumb { 
+background: #HEX; }  
+
+/* HEADERS - 
+H1 is the big header that says 'X's Den' 
+H2 is not used anywhere in the default look unless you want to use it. 
+H3 is used in the side bar (above the energy panel, achievement panel, etc. */ 
+
+h1 { 
+color: #HEX !important; 
+font-size: 64px; 
+text-align: center !important; 
+font-family: 'Ruslan Display', cursive;} 
+
+h2 { 
+color: #HEX !important; 
+font-size: 24px;} 
+
+h3 { 
+color: #HEX !important; 
+font-size: 18px;} 
+
+/* LINKS 
+Color of links. This will affect all links on your page. 
+Plan accordingly. */ 
+
+a:link, 
+a:visited { 
+color: #HEX !important; 
+background: none !important; } 
+
+a:hover { 
+color: #HEX !important; } 
+
+/* MAIN PANEL - The panel in front of your background image. Usually a solid color on Lioden. 
+You can make it a solid color by either using a HEX code, or by setting the final number in RGBA to 1.0 */ 
+
+.container.main { 
+background: rgba(55, 58, 39, 0.0); 
+border: none; 
+box-shadow: none; 
+border-radius: 5px; } 
+.col-md-9 { 
+background: none; }  
+
+/* TOPBAR, NAVBAR, & BREADCRUMB */ 
+
+.topbar { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important;  } 
+
+.navbar { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; } 
+
+.navbar li a:hover { 
+background: #HEX !important; 
+color: #e4a574 !important; } 
+
+/* This is mobile collapable navbar color changes. 
+toggle is the button that opens the navbar 
+leave .navbar-toggle background set to #HEX to have it inherit the color of the navbar 
+navbar-collapse is just there to hide the white line  
+*/ 
+
+.navbar-toggle { 
+border: none !important; 
+background: #HEX !important; 
+} 
+
+.navbar-collapse { 
+box-shadow: none !important; 
+border-top: none !important; 
+} 
+
+
+/* Bookmark Bar - aka breadcrumb, this is where your link path is shown */ 
+
+.breadcrumb { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important;}  
+.breadcrumb .active { 
+color: #HEX; } 
+
+/* ALERTS  
+.alert is all alerts, only set this one if you want all alerts to be the same color 
+.alert-success is the green one you see for hunting, patrolling, etc. 
+.alert-danger is red alerts, like inbox 
+.alert-warning is also some other red alerts, but I can't remember which ones. keep this 
+and danger the same color for best results 
+(quick notice maybe? more research)*/ 
+
+.alert { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+text-align: center !important;  } 
+.alert-warning { 
+background: #HEX !important; 
+color: #HEX !important;} 
+.alert-danger { 
+background: #HEX !important; 
+color: #HEX !important;} 
+.alert-success { 
+background: #HEX !important; 
+color: #HEX !important;} 
+
+
+/*COMMENT BOX  
+This is a complicated one. please read carefully 
+div#CommentBox is the color of the ENTIRE BOX, without comments in it. it is also the container 
+.comment is the COMMENTS THEMSELVES 
+If you want the flippy floppy colors, where one is a little darker than the other, DO NOT FILL IN ANYTHING FOR 
+.comment ONLY FILL IN div#commentBox 
+
+.input.bad is the icon to delete comments. you will be the only one to see this 
+.input.bad a is the color of the x inside of it 
+*/ 
+
+div#commentBox { 
+background: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+color: #HEX !important;} 
+
+.comment {      
+background: #HEX !important; 
+border: none !important; 
+border-bottom: none !important; 
+border-radius: 0px !important; 
+color: #HEX !important; 
+text-align: center !important;} 
+.text-muted {  
+color: #HEX !important; } 
+
+input.bad { 
+background: #HEX !important; 
+color: #HEX !important;} 
+input.bad a { 
+color: #HEX !important; } 
+
+table#player.table hr { 
+display: none !important; } 
+table#player.table div.xlarge {  
+margin-top: 10px !important; } 
+
+
+/* SIDE PANELS  
+
+you can use https://www.transparenttextures.com/ to have your panel bgs, your progress bars, almost any element in your css have a texture! 
+please note that the css provided by the site does NOT work on replaced images, you have to do something weird for those. 
+
+if you want a texture for your panels, using the cardboard texture as an example, the code will look like this: 
+.panel { 
+background-color: #1000f2; 
+background-image: url("https://www.transparenttextures.com/patterns/cardboard.png"); 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+box-shadow: none !important;  } */ 
+
+.panel { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+box-shadow: none !important;  } 
+
+/*IMPRESSION / ALL PROGRESS Bars 
+Unless you color the progress bars below, all progress bars will default 
+to the colors you put here. 
+Bars will also inherit the border-radius value from this one, so it's 
+not needed to specify border-radius for all bars. */ 
+.progress-bar { 
+background: #HEX !important;  
+border-radius: 0px !important; } 
+
+/* ENERGY */ .progress-bar-warning {  
+background: #HEX !important; 
+color: #HEX !important;} 
+/* HUNGER */ .progress-bar-danger {  
+background: #HEX !important; 
+color: #HEX !important;} 
+/* EXP + ACHIEVEMENTS */ .progress-bar-success {  
+background: #HEX !important; 
+color: #HEX !important;} 
+
+/* This is the text that reads Energy: X% */ 
+.progress div { 
+color: #HEX !important; } 
+
+/* This is the background of the progress bars. */ 
+.progress { 
+background:  #HEX; 
+color: #HEX !important; 
+border-radius: 0px !important;  } 
+
+/* Icon Replacement - Warning 
+used only for starving kings and last day of events */ 
+
+img[src$="icon_warning.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+/* CHAT */ 
+
+button#label_currentChannel { 
+border: none !important; 
+background: #HEX !important; } 
+
+div#chatMessageContainer { 
+border: none !important; } 
+
+.s-chat-message_timestamp { 
+color: #HEX !important; } 
+
+.s-chat-sidebar #fraChatChannelMenu, 
+button.channelSwitcher, button.channelSwitcher.active { 
+    background: #HEX !important; 
+color: #HEX !important;         
+border: none !important; 
+border-radius: 0px !important; 
+box-shadow: none !important; } 
+
+div.emoteList.active { 
+  background: #HEX !important; 
+  border: 1px solid #HEX !important; 
+  box-shadow: none !important; 
+} 
+div.emoteList.active::before { 
+background: #HEX 
+border-top: none !important; 
+border: 1px solid #HEX !important; } 
+
+/* PINNED MESSAGES - This will change the background color of where staff pin news */ 
+
+.s-chat-message__pinned { 
+background-color: #HEX !important; 
+color: #HEX !important; 
+border: none !important; } 
+
+/* Odd will show at the TOP of chat, even will show every other message under it. If you want both colors the same, do 
+not touch the even/odd specifications */  
+
+.s-chat-message { 
+background: #HEX !important; 
+color: #HEX !important; 
+border-bottom: #HEX !important; } 
+
+.s-chat-message:nth-child(even) { 
+background: #HEX !important; 
+border: none !important; } 
+.s-chat-message:nth-child(odd) { 
+background: #HEX !important; 
+border: none !important; } 
+
+/* This changes the color of pinged messages. Yes, it has to say background-color 
+no it doesn't work if you just do background. 
+may 8th: stop touchy */ 
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention { 
+background-color: #HEX !important; 
+border-left: 6px solid #HEX !important; 
+color: #HEX !important; } 
+
+/* This is the character counter, that displays X/150 */ 
+
+div#lblCharacterCounter { 
+color: #HEX !important; } 
+
+/* I can't remember what this does but I know things get weird if you touch it 
+that means do NOT touch it. 
+i'm being so fr stop touching this */ 
+html.nolayout { 
+background: none !important; } 
+
+/* FAPA, KING DYNASTY, ETC. 
+The .xsmall makes it where FAPA boxes are the same length. 
+div.left controls BOTH the dynasty, achievements, showcase, beetle book AND 
+view breeding requests, view user log, and view attack history buttons */ 
+
+.feature { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: 3px double #HEX !important; 
+border-radius: 0px !important;  } 
+
+div.left { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; } 
+
+.xsmall { 
+font-size: 14px !important; } 
+
+/* LION INFO  
+Table - the background behind your table. You can make this a solid color by replacing 
+rgba(0, 0, 0, 0.0) with a HEX code, or by replacing the 0.0 with a 1.0 */ 
+
+.table { 
+background: rgba(0, 0, 0, 0.0); 
+border: none !important; 
+border-collapse: separate; 
+border-radius: 0px; } 
+
+/* .top is where your king's name is displayed 
+.bottom is where your number of mutations within your pride is displayed 
+th is every other header on your den, like sparring table, reclaim left lions, 
+edit details, etc. */ 
+
+.top, .bottom, th { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; } 
+
+/* This removes the underline under the 'X mutations in your pride' link 
+if you like it, you can just delete the code under this */ 
+
+.bottom a:visited, .bottom a { 
+text-decoration: none !important;} 
+
+/* table.left will be used by the sections on the left of the edit your details panel once open 
+.inner-table .left is used by the table that displays the names of the sections of 
+info about your den, like your territory, your king's stats, etc.  
+.inner-table .right is used by the boxes next to the king's info, that displays the actual info. */ 
+
+.table .left { 
+background: #HEX; 
+border-radius: 0px !important; } 
+
+.inner-table .left { 
+background: #HEX !important; 
+border-radius: 0px !important;  } 
+
+.inner-table .right { 
+background: #HEX !important; 
+border-radius: 0px !important;  
+color: #HEX !important; }  
+
+.right_odd { 
+background: none !important; } 
+
+/* CUSTOM KING TITLES 
+Codes made by Pandora #144118   
+Codes may be edited, used in commissions or for personal use 
+Please do not remove credit 
+
+note: you can use both, one, or the other. 
+if you don't want to use them, just delete this section. 
+just don't use apostraphes (') in the actual text, that messes with the code 
+*/ 
+
+/* CUSTOM KING TITLE - AFTER */ 
+
+#about > tbody > tr:nth-child(1) > td > div::after { 
+    content:', TEXT'; 
+    font-size:17px; 
+
+} 
+
+/* CUSTOM KING TITLE - BEFORE */ 
+
+#about > tbody > tr:nth-child(1) > td > div::before { 
+    content:'TEXT'; 
+    font-size:17px; 
+
+} 
+
+/* DEN ICON IMAGE REPLACEMENTS - These replace the custom images shown next to message, view trades, etc. 
+if you don't want these changed, just do not edit this part.  
+the names are pretty self explanatory 
+you can also edit these if you want to add effects to YOUR player image and don't want it to be on these images */ 
+
+img[src$="icon_den_message.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+img[src$="icon_den_gift.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+img[src$="icon_den_trade.png"] { 
+content: url('imagelink') !important;  
+width: 24px !important; } 
+
+img[src$="icon_den_wishlist.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+img[src$="icon_den_viewtrade.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+img[src$="icon_den_gift.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+img[src$="icon_den_block.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+img[src$="icon_den_friend.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+img[src$="donator.png"] { 
+content: url('imagelink') !important; 
+width: 24px !important; } 
+
+/* LION AND USER AVATAR OPACITY */ 
+
+div#lion_image { 
+opacity: 1.0; 
+border-radius: 50%; 
+overflow: hidden; }    
+table#player img { 
+opacity: 1.0; 
+border-radius: 50%; } 
+
+/* LIODEN LOGO REPLACER - You can use any image, but the 192x120 size works best. 
+otherwise it can make your navbar look weird. 
+192x120 */ 
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img { 
+display: none;} 
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a::after { 
+content: url('IMG LINK'); } 
+
+/* TEXT BOXES & BUTTONS - 
+all text boxes and buttons will be whatever color you put in here 
+you can separate them, just by copy and pasting names and the css code behind it 
+for example, for input to be red while everything else is white, it would look like this 
+input {background: red !important;} 
+textarea, select, button.button, a.btn.btn-default.button {background: white !important;} */ 
+
+input, textarea, select, button.button, 
+a.btn.btn-default.button { 
+background: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+color: #HEX !important; 
+text-shadow: none !important; } 
+
+/* CAVE NAMES - changes the color of of where cave names are displayed */ 
+
+.cave-grid, 
+.mound-grid { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; } 
+
+/* CAVE & MOUND COVERS 
+width: 240 
+height: 120 (60 for half size - like the nesting banner) 
+first one controls all cave slots - even empty ones. 
+If you want big cave icons (like the ones here: https://images2.imgbox.com/26/21/3qjfGg8U_o.png), simply use a lioden 
+bg or an image equal in size (640x500)  
+you can change the sizes on the nesting, unsorted, etc, to be the same as the other sizes, as well. 
+beetle mounds are 130x80px  
+you can copy and paste for more caves or mounds than what's provided 
+*/ 
+
+div.cave-grid>img { 
+content: url('https://static.lioden.com/images/items/Amusement/nestingbundle.png')!important; 
+width: 75px; 
+height: 75px; } 
+
+a[href$="CAVEID"]>div.cave-grid>img { 
+content: url('IMG LINK')!important; 
+width: 258px !important; 
+height: auto !important; } 
+a[href$="CAVEID"]>div.cave-grid>img { 
+content: url('IMG LINK')!important;  
+width: 258px !important; 
+height: auto !important; } 
+a[href$="CAVEID"]>div.cave-grid>img { 
+content: url('IMG LINK')!important; 
+width: 258px !important; 
+height: auto !important; } 
+
+
+div.cave-grid>img[src$="nestingbanner.png"] { 
+        content: url('IMG LINK')!important; } 
+a[href$="unsorted.php?id=USERID"]>div.cave-grid>img{ 
+content: url('IMG LINK')!important; 
+width: 75px; 
+height: 75px;} 
+a[href*="lionoverview.php?id=USERID"]>div.cave-grid>img { 
+content: url('IMG LINK')!important; 
+width: 75px; 
+height: 75px; } 
+
+a[href$="unsorted-beetles.php?id=USERID"] img { 
+content:url('IMG LINK') !important; 
+background-size: cover; 
+width: 100%; 
+height: auto; }  
+
+a[href$="mound.php?id=MOUNDID"] img { 
+content:url('IMG LINK') !important; 
+background-size: cover; 
+width: 100%; 
+height: auto; }  
+
+/* Codes made by Pandora #144118 and Kat .:Red Lion of Voltron:. #94329  
+Codes may be edited, used in commissions or for personal use 
+Please do not remove credit 
+*/ 
+
+/* KING DYNASTY */ 
+img[src$="ancestors.jpg"] { 
+    content:url('LINK')!important; 
+    width:185px!important; } 
+
+/* PRIDE DYNASTY */ 
+img[src$="ancestorsfem.png"] { 
+    content:url('LINK')!important; 
+    width:185px!important; } 
+
+/* ACHIEVMENTS */ 
+img[src$="achievements.jpg"] { 
+    content:url('LINK')!important; 
+    width:185px!important; } 
+
+/* SHOWCASE */ 
+img[src$="showcase/banner.png"] { 
+    content:url('LINK')!important; 
+    width:185px!important; } 
+
+
+/* CAVE COMPATIBILITY 
+featured-lion changes the colors behind your featured lion, literally the strip of text where  
+it says 'featured lion: NAME' 
+the image src cave default changes the image behind your lion. it will not make them display decor. 
+
+table#pride.table controls where your lions names are shown. we're only giving a color value 
+here, but you can also edit the background by adding in a background value. 
+the a, and a:visited values are for links. this will make your lions names be the same color as whatever 
+color you set for the text 
+table#pride.table .xsmall just puts the lion subtext back to its regular size, since we edited all 
+.xsmalls earlier when fixing FAPA. you can remove this if you want the bigger text. */ 
+
+.featured-lion { 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+padding: 0; 
+margin: 0 auto; 
+max-width: 640px; 
+font-weight: bold; 
+font-size: 14px; } 
+
+img[src*="cave/default"] { 
+content: url('IMG LINK') !important;} 
+
+table#pride.table, table#pride.table a, table#pride.table a:visited { 
+color: #HEX !important; } 
+
+table#pride.table .xsmall 
+{font-size: 12px !important;} 
+
+/* these change the arrows that let you navigate to the next page in caves, if you do not want to change these, 
+remove this section of code. 
+the arrow icons are 50x30px */ 
+
+img[src$="arrow.png"] { 
+content: url('imagelink') !important;} 
+img[src$="arrowgrayleft.png"] { 
+content: url('imagelink') !important;} 
+
+/* this is entirely optional and can help you add a texture over your featured lion! 
+please use https://www.transparenttextures.com/ to find your image 
+you should still rehost the image for consistency's sake, in case this page ever goes down, but the site 
+provides css you can use for this purpose and just copy and paste. do not copy and paste over the filter aspect, or it will just be a solid image 
+you can change the opacity to any value between 0 and 1, just don't change it to 1.0 or it'll be a solid image 
+if you do not want this, delete this section of code. 
+
+you can also use the css provided by transparent textures to make other things have texture! */ 
+
+div.lion-image-block>img[src$="blank.png"] { 
+background-color: #b98214 !important; 
+    background-image: url("LINK") !important; 
+filter: opacity(0.2) !important;} 
+
+/* CUSTOM FOOTNOTE ICONS - MADE BY PANDORA 
+ Codes made by Pandora #144118   
+Codes may be edited, used in commissions or for personal use 
+Please do not remove credit 
+*/ 
+
+/* FOOTNOTE - MUT */ 
+img[src$="footmut.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* FOOTNOTE - HUNT */ 
+img[src$="foothunt.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* FOOTNOTE - HEIR */ 
+img[src$="footheir.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* FOOTNOTE - BREED/HEART */ 
+img[src$="footbreed.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* FOOTNOTE - CROSS/X */ 
+img[src$="footx.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* FOOTNOTE - BIO/BOOK */ 
+img[src$="footbio.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* FOOTNOTE - INFERTILE/BROKEN HEART*/ 
+img[src$="footinfertile.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* This changes the color of the 'badge', aka what displays inbox notifications & 
+days till heat for lionesses */ 
+
+.badge { 
+background: #HEX !important; 
+color: #HEX !important; } 
+
+/ * NO LINK UNDERLINE - This removes Link underlines at the links at the bottom of the page, 
+and removes link underlines from edit your details */ 
+
+.footer a:link, .footer a:visited, .footer a:active { 
+border-bottom: none !important; } 
+
+td.bottom a, th a { 
+border-bottom: none !important; } 
+
+/* BOXES 
+do not give the box container a background. 
+Box1, Box2, & Box3 can be repeated as many times as possible, just make sure you properly close them. 
+box html should look like this 
+<div class="boxcontainer"><div class="Box1">text</div></div> 
+<div class="boxcontainer"><div class="Box3">text</div><div class="Box2">text</div></div> */ 
+
+.boxcontainer { 
+background: none; 
+height: 75px; 
+padding: 0px; 
+display: block; 
+justify-content: center; 
+transition: 1s } 
+.boxcontainer:hover { 
+height: 250px; } 
+
+.Box1 { 
+float: left; 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+padding: 5px; 
+float: left; 
+height: 75px; 
+width: 100%; 
+overflow: hidden; 
+margin-bottom: 10px; 
+transition: 1s }    
+.Box1:hover { 
+overflow-y: auto; 
+height: 250px; } 
+
+.Box2 { 
+float: right; 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+padding: 5px; 
+float: right; 
+height: 75px; 
+width: 30%; 
+overflow: hidden; 
+margin-bottom: 10px; 
+transition: 1s }    
+.Box2:hover { 
+overflow-y: auto; 
+height: 250px; } 
+
+.Box3 { 
+float: right; 
+background: #HEX !important; 
+color: #HEX !important; 
+border: none !important; 
+border-radius: 0px !important; 
+padding: 5px; 
+float: right; 
+height: 75px; 
+width: 65%; 
+overflow: hidden; 
+margin-bottom: 10px; 
+transition: 1s }    
+.Box3:hover { 
+overflow-y: auto; 
+height: 250px; } 
+
+/* MOBILE ONLY BOXES  
+- these will only display on mobile. use if you want a more simplified box for mobile. 
+mobile box html should look like this 
+<div class="mobilebox">text</div>  
+if you don't want mobile only boxes, delete everything from below this to above cave covers */ 
+
+.mobilebox { 
+float: center; 
+background: #HEX !important; 
+border: 1px solid #HEX !important; 
+border-radius: 0px !important; 
+color: #HEX !important; 
+margin: 10px; 
+padding: 10px; 
+float: center; 
+height: 155px; 
+width: 80%; 
+overflow: auto; 
+transition: 1s } 
+
+@media only screen and (max-width: 991px) and (min-width: 768px) { 
+
+                .Box1, .Box2, .Box3, .boxcontainer { 
+                        display: none !important; 
+                display: block !important; } 
+} 
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) { 
+
+                .Box1, .Box2, .Box3, .boxcontainer { 
+                        display: none !important; 
+                } 
+
+        } 
+
+        @media only screen and (max-width: 991px) and (min-width: 768px) { 
+
+                .Box1, .Box2, .Box3, .boxcontainer { 
+                        display: none !important; 
+                } 
+
+        } 
+
+        @media only screen and (max-width: 767px) { 
+
+                .Box1, .Box2, .Box3, .boxcontainer { 
+                        display: none !important; 
+                } 
+} 
+
+@media screen and (min-width: 1200px){ 
+
+                .mobilebox, .mobcontainer { 
+                        display: none !important; 
+                } 
+} 
+
+.mobilebox, .mobcontainer { 
+display: block !important; } 
+.Box1, .Box2, .Box3, .boxcontainer  { 
+display: none !important; }        } 
+
+@media only screen and (max-width: 767px) { 
+        .container.main .hidden-xs { 
+            display: block !important; 
+        } 
+} 
+
+@media only screen and (max-width: 991px) and (min-width: 768px) { 
+    display: block !important; 
+}  
+
+@media only screen and (min-width: 1200px) { 
+        div.quote { 
+            width: 790px; 
+        } 
+    } 
+
+/* These are nice little QOL codes, credit to their creators! 
+
+Codes made by Pandora #144118 and Kat .:Red Lion of Voltron:. #94329  
+Codes may be edited, used in commissions or for personal use 
+Please do not remove credit 
+
+note from jes: 
+For the members online and offline code, please only fill out one or the other. 
+If you want a solid color, only fill in the 'background' 
+if you want an image, only fill in the 'content'  
+or fill out both i can't stop you but it'll be a clusterfuck */ 
+
+/* MEMBER ONLINE */ 
+.member-online { 
+    background: #HEX; 
+    content:url('none')!important; 
+        border-radius: 0px; 
+    width:40px!important; 
+    height:40px; 
+        margin:-10px; 
+        margin-left:10px; } 
+
+/* MEMBER OFFLINE */ 
+.member-offline { 
+    background: #HEX; 
+    content:url('none')!important; 
+        border-radius: 0px; 
+    width:40px!important; 
+    height:40px; 
+        margin:-10px; 
+        margin-left:10px; 
+        filter: saturate(0%); } 
+
+/* ALL CURRENCY ICONS - also by kat and pandora  
+if you do not want to change currency icons, simply delete this section of code */ 
+
+/* GOLD BEETLE */ 
+img[src$="gold.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* SILVER BEETLE */ 
+img[src$="silver.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* EVENT CURRENCY */ 
+
+/* JAN */ 
+img[src$="dermestid.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* FEB */ 
+img[src$="heartshell.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* MARCH */ 
+img[src$="beetlerhino.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* APRIL */ 
+img[src$="easteregg.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+
+/* MAY */ 
+img[src$="beetlemant.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* JUNE */ 
+img[src$="khepri.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* JULY - METEORITE SHARDS */ 
+img[src$="shard.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* JULY - AXION CORES */ 
+img[src$="axion.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* AUG - CARRION BONES */ 
+img[src$="beetlecarrion.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* AUG - DRY BONES */ 
+img[src$="bone.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* SEPT - JEWEL BEETLES */ 
+img[src$="beetlejewel.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* SEPT - ELDRITCH TOKENS */ 
+img[src$="eldritch.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* OCT - BLOOD BEETLES */ 
+img[src$="beetleblood.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* OCT - NEPHILIM FEATHERS */ 
+img[src$="nephelinefeather.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* OCT - DEMON SCALES */ 
+img[src$="demonicscale.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* NOV */ 
+img[src$="scarabbeetle.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* DEC */ 
+img[src$="stinkbug.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* TREASURE HUNT */ 
+img[src$="icon_doubloon.png"] { 
+    content:url('LINK')!important; 
+    width:20px!important; } 
+
+/* IF YOU WANT A CUSTOM CURSOR GO TO https://www.cursors-4u.com/ 
+AND COPY AND PASTE THE PROVIDED CODE ONCE YOU CLICK THE GET HTML/CSS CODE BUTTON 
+DO IT BELOW THIS POINT BUT BEFORE THE CREDIT */ 
+
+/* CREDIT - no touchy this part, the code will work just fine */ 
+
+.breadcrumb::after { 
+content: "css template by katie (#106445) & jester (#187561)"; 
+color: #HEX; 
+position: absolute; 
+right: 13%; 
+z-index: 100; } 
+
+@media only screen and (max-width: 1199px) and (min-width: 992px)  { 
+        .breadcrumb::after { 
+            right: 20%; 
+        } 
+    } 
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  { 
+        .breadcrumb::after { 
+            right: 20%; 
+        } 
+    } 
+
+    @media only screen and (max-width: 767px) { 
+        .breadcrumb::after { 
+            right: 22%; 
+        } 
+    }
