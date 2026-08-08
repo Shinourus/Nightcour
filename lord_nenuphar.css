@@ -8,45 +8,9 @@ body {
     color: #d8c7c9 !important;
 }
 /* =========================================
-   LORD NÉNUPHAR — B : PANNEAUX
+   LORD NÉNUPHAR — TEST
    ========================================= */
 
-/* Fond des panneaux */
-.panel,
-.well,
-.thumbnail,
-.modal-content {
-    background-color: #120608 !important;
-    border-color: #4a151d !important;
-}
-
-/* En-têtes */
-.panel-heading,
-.modal-header {
-    background: #2a0b10 !important;
-    color: #ead7d9 !important;
-    border-color: #541923 !important;
-}
-
-/* Contenu des panneaux */
-.panel-body,
-.modal-body {
-    background-color: #120608 !important;
-    color: #d8c7c9 !important;
-}
-
-/* Bordures */
-.panel,
-.well {
-    border: 1px solid #4a151d !important;
-    border-radius: 5px !important;
-}
-/* TEST B */
-
-body {
-    background-color: #090304 !important;
-}
-
-#main {
-    background-color: #18070a !important;
+body * {
+    border-color: #8b1e2d !important;
 }
