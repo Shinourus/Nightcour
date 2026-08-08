@@ -1,71 +1,9 @@
-/* ========================================
-   NIGHTCOUR — A : FOND
-   ======================================== */
+/* =========================================
+   LORD NÉNUPHAR — A : FOND
+   ========================================= */
 
 html,
 body {
-    background-color: #080304 !important;
-
-    background-image:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(100, 0, 15, 0.35),
-            transparent 55%
-        ),
-        linear-gradient(
-            180deg,
-            #18070a 0%,
-            #0d0305 45%,
-            #050203 100%
-        ) !important;
-
-    background-attachment: fixed !important;
-    color: #d8caca;
-}
-/* ========================================
-   NIGHTCOUR — B : PANNEAUX
-   ======================================== */
-
-/* Panneaux principaux */
-.panel,
-.panel-body,
-.panel-heading,
-.well,
-.box,
-.container,
-.content {
-    background-color: rgba(18, 5, 8, 0.94) !important;
-    border-color: #4a151d !important;
-}
-
-/* Bordures élégantes */
-.panel,
-.well,
-.box {
-    border: 1px solid #541923 !important;
-    border-radius: 6px !important;
-}
-
-/* Titres des panneaux */
-.panel-heading {
-    background: linear-gradient(
-        180deg,
-        #4a111a 0%,
-        #26080d 100%
-    ) !important;
-
-    color: #ead6d8 !important;
-    border-color: #641c27 !important;
-}
-
-/* Zones de contenu */
-.panel-body {
-    color: #d5c1c4 !important;
-}
-
-/* Légère profondeur */
-.panel,
-.well,
-.box {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45) !important;
+    background-color: #090304 !important;
+    color: #d8c7c9 !important;
 }
