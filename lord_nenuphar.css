@@ -38,7 +38,7 @@ box-shadow - a shadow behind the element itself. you usually want this set to no
 
 /* FONTS - Import from Google Fonts */ 
 
-@import url('FONT LINK'); 
+@import url('https://fonts.google.com/specimen/Dancing+Script?preview.script=Latn&preview.lang=fr_Latn'); 
 
 body {font-family: INPUT HERE;} 
 
