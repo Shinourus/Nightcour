@@ -8,15 +8,21 @@ border-radius - the roundness of the borders, for circular elements, set to 50%
 box-shadow - a shadow behind the element itself. you usually want this set to none.  
 */ 
 
-/* FONTS - Import from Google Fonts */ 
+/* FONTS - Import from Google Fonts */
 
-@import url('FONT LINK'); 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
-body {font-family: INPUT HERE;} 
+body {
+    font-family: 'Playfair Display', serif;
+}
 
-.topbar {font-family: INPUT HERE;} 
+.topbar {
+    font-family: 'Cinzel', serif;
+}
 
-.navbar {font-family: INPUT HERE;} 
+.navbar {
+    font-family: 'Cinzel', serif;
+} 
 
 /* BACKGROUNDS  
 The first one is for PC, the second is for mobile. You can also use an image in the second one 
