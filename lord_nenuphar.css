@@ -11,11 +11,15 @@ box-shadow - a shadow behind the element itself. you usually want this set to no
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 body {
-  font-family: 'Playfair Display', serif !important;
+  font-family: 'Playfair Display', serif;
 }
 
-.topbar, .navbar {
-  font-family: 'Cinzel', serif !important;
+.topbar {
+  font-family: 'Cinzel', serif;
+}
+
+.navbar {
+  font-family: 'Cinzel', serif;
 }
 
 /* BACKGROUNDS  
