@@ -22,3 +22,50 @@ body {
     background-attachment: fixed !important;
     color: #d8caca;
 }
+/* ========================================
+   NIGHTCOUR — B : PANNEAUX
+   ======================================== */
+
+/* Panneaux principaux */
+.panel,
+.panel-body,
+.panel-heading,
+.well,
+.box,
+.container,
+.content {
+    background-color: rgba(18, 5, 8, 0.94) !important;
+    border-color: #4a151d !important;
+}
+
+/* Bordures élégantes */
+.panel,
+.well,
+.box {
+    border: 1px solid #541923 !important;
+    border-radius: 6px !important;
+}
+
+/* Titres des panneaux */
+.panel-heading {
+    background: linear-gradient(
+        180deg,
+        #4a111a 0%,
+        #26080d 100%
+    ) !important;
+
+    color: #ead6d8 !important;
+    border-color: #641c27 !important;
+}
+
+/* Zones de contenu */
+.panel-body {
+    color: #d5c1c4 !important;
+}
+
+/* Légère profondeur */
+.panel,
+.well,
+.box {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45) !important;
+}
