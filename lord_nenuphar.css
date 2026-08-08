@@ -40,11 +40,11 @@ box-shadow - a shadow behind the element itself. you usually want this set to no
 
 @import url('https://fonts.google.com/specimen/Dancing+Script?preview.script=Latn&preview.lang=fr_Latn'); 
 
-body {font-family: INPUT HERE;} 
+body {font-family: https://fonts.google.com/specimen/Dancing+Script?preview.script=Latn&preview.lang=fr_Latn;} 
 
-.topbar {font-family: INPUT HERE;} 
+.topbar {font-family: https://fonts.google.com/specimen/Dancing+Script?preview.script=Latn&preview.lang=fr_Latn;} 
 
-.navbar {font-family: INPUT HERE;} 
+.navbar {font-family: https://fonts.google.com/specimen/Dancing+Script?preview.script=Latn&preview.lang=fr_Latn;} 
 
 /* BACKGROUNDS  
 The first one is for PC, the second is for mobile. You can also use an image in the second one 
@@ -53,7 +53,7 @@ BUT I recommend repeating patterns rather than full images. */
 
 @media screen and (min-width: 601px) {  
 body { 
-background: url('IMG LINK') center center fixed; 
+background: url('https://share.google/p2Dhwlu8PkmJemXJU') center center fixed; 
 background-size: 100%; 
 color: #HEX; } } 
 
