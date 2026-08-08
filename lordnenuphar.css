@@ -1,0 +1,1166 @@
+/* Modèle CSS gratuit de Jester et Katie -
+Créé à partir du modèle CSS gratuit v2 de Katie / devrait être considéré comme la v3
+
+REMARQUE : CECI EST CONÇU POUR ÊTRE UN MODÈLE ULTIME
+Qu'est-ce que cela signifie ? Cela signifie qu'il y a beaucoup de choses ici pour un développeur moyen.
+Je n'utiliserai pas le CSS si je débute en programmation. Ce modèle est accessible à tous, quel que soit leur niveau.
+Mais si vous n'êtes pas sûr de l'utilité d'un élément, il se peut qu'il n'ait pas été ajouté en pensant aux débutants.
+
+Si vous n'êtes pas sûr de l'effet d'une action, ou si vous craignez qu'une modification puisse endommager quelque chose, n'hésitez pas à la laisser telle quelle.
+Vous pouvez modifier certains éléments avec l'outil d'inspection pour voir si cela résout le problème.
+
+Vous pouvez l'utiliser pour des commandes, pour un usage personnel, etc.
+Veuillez toutefois ne pas supprimer les crédits de tous les utilisateurs qui ont contribué à ce projet.
+
+Modèle créé par jester (#187561) et katie (#106445)
+
+Il existe de nombreux autres codes utilisés ici, disséminés aléatoirement dans ce document et dans divers autres.
+Codes réalisés par nous deux.
+Vous trouverez ci-dessous une liste des identifiants des personnes ayant contribué à d'autres éléments ou ayant servi d'inspiration pour divers aspects de ce modèle.
+Le fait qu'un utilisateur soit crédité ne signifie pas que son code est utilisé dans un fichier CSS spécifique créé avec ce modèle.
+ou même présents dans ce modèle. Cependant, il s'agit d'utilisateurs ayant apporté des contributions significatives au codage CSS.
+Et il est presque impossible d'ignorer ce qu'ils ont fait. D'une manière ou d'une autre, ils sont présents dans ce code.
+Pandora n° 144118
+Kat #94329
+fauve n° 251887
+Austin n° 43750
+Bobcat (#79288)
+Tserin (#2230)
+Atticus (#198107)
+
+Voici quelques termes utiles à retenir.
+élément - ce que vous êtes en train de modifier
+arrière-plan - désigne l'arrière-plan complet de l'élément
+couleur - la couleur du texte de l'élément
+border-radius - le rayon de courbure des bordures, pour les éléments circulaires, fixé à 50 %
+box-shadow : ombre portée derrière l’élément. Il est généralement préférable de désactiver cette option.
+*/
+ 
+/* POLICES - Importer depuis Google Fonts */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+ 
+corps {font-family: 'Cormorant Garamond', Georgia, serif;}
+ 
+.topbar {famille de polices : 'Cinzel', Géorgie, empattement ;}
+ 
+.navbar {famille de polices : 'Cinzel', Géorgie, empattement ;}
+
+/* ARRIÈRE-PLAN
+Le premier est pour PC, le second pour mobile. Vous pouvez également utiliser une image dans le second.
+en remplaçant #0b0508 par url('IMG LINK') centre centre corrigé ;
+MAIS je recommande les motifs répétitifs plutôt que les images complètes.
+ 
+@media screen and (min-width: 601px) {
+corps {
+arrière-plan:
+    radial-gradient(ellipse à 50% -10%, rgba(143,23,36,.38), transparent 58%),
+    gradient linéaire (135°, #030203 0 %, #0b0508 35 %, #3a080f 72 %, #070304 100 %)
+    centre centre fixe;
+taille de fond : 100 % ;
+couleur : #eadfc9 ; } }
+
+@media screen and (max-width: 600px){
+corps {
+arrière-plan:
+    gradient linéaire (160°, #030203 0%, #26070d 55%, #070304 100%);
+taille de fond : couverture ;
+couleur : #eadfc9 ; } }
+
+/* BOÎTES DE DÉFILEMENT */
+ 
+::-webkit-scrollbar {
+largeur : 7 px ;
+hauteur : 7px; }
+::-webkit-scrollbar-track {
+arrière-plan : #0b0508;}
+::-webkit-scrollbar-thumb {
+arrière-plan : #0b0508; }
+ 
+/* EN-TÊTES -
+H1 est le grand titre qui indique « Le repaire de X ».
+H2 n'est utilisé nulle part dans l'apparence par défaut, sauf si vous souhaitez l'utiliser.
+H3 est utilisé dans la barre latérale (au-dessus du panneau d'énergie, du panneau des succès, etc.).
+ 
+h1 {
+couleur : #eadfc9 !important ;
+taille de police : 64 px ;
+text-align: center !important;
+famille de polices : 'Cinzel', Géorgie, empattement ;}
+
+h2 {
+couleur : #eadfc9 !important ;
+taille de police : 24px;}
+
+h3 {
+couleur : #eadfc9 !important ;
+taille de police : 18px;}
+ 
+/* LIENS
+Couleur des liens. Ceci affectera tous les liens de votre page.
+Prévoyez en conséquence.
+ 
+a:lien,
+a:visité {
+couleur : #eadfc9 !important ;
+arrière-plan : aucun !important ; }
+   
+a:survol {
+couleur: #eadfc9 !important; }
+ 
+/* PANNEAU PRINCIPAL - Le panneau devant votre image de fond. Généralement une couleur unie sur Lioden.
+Vous pouvez obtenir une couleur unie soit en utilisant un code HEX, soit en définissant la valeur finale RGBA à 1.0.
+   
+.container.main {
+arrière-plan : rgba(55, 58, 39, 0.0);
+bordure : aucune ;
+ombre portée : aucune ;
+bordure-radius: 5px; }
+.col-md-9 {
+arrière-plan : aucun ; }
+ 
+/* BARRE SUPÉRIEURE, BARRE DE NAVIGATION ET FIL D'Ariane */
+ 
+.topbar {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+border-radius: 0px !important; }
+ 
+.navbar {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+border-radius: 0px !important; }
+
+.navbar li a:hover {
+arrière-plan : #0b0508 !important ;
+couleur : #e4a574 !important; }
+
+/* Ceci concerne les changements de couleur de la barre de navigation extensible sur mobile.
+Le bouton bascule permet d'ouvrir la barre de navigation.
+Laissez la propriété background de .navbar-toggle définie sur #0b0508 pour qu'elle hérite de la couleur de la barre de navigation.
+La fonction navbar-collapse sert uniquement à masquer la ligne blanche.
+*/
+
+.navbar-toggle {
+bordure : aucune !important ;
+arrière-plan : #0b0508 !important ;
+}
+
+.navbar-collapse {
+box-shadow: aucune !important;
+border-top: aucun !important;
+}
+
+ 
+/* Barre de favoris - également appelée fil d'Ariane, c'est ici que votre chemin de navigation s'affiche */
+
+.fil d'Ariane {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+border-radius: 0px !important;}
+.fil d'Ariane .actif {
+couleur : #eadfc9; }
+ 
+/* ALERTES
+L'option `.alert` concerne toutes les alertes ; ne la configurez que si vous souhaitez que toutes les alertes aient la même couleur.
+.alert-success est le bouton vert que vous voyez pour la chasse, les patrouilles, etc.
+.alert-danger correspond aux alertes rouges, comme dans la boîte de réception.
+.alert-warning correspond également à d'autres alertes rouges, mais je ne me souviens plus lesquelles. Conservez ceci.
+et danger de la même couleur pour de meilleurs résultats
+(Avis rapide peut-être ? Plus de recherches)*/
+ 
+.alerte {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+text-align: center !important; }
+.alerte-avertissement {
+arrière-plan : #0b0508 !important ;
+couleur: #eadfc9 !important;}
+.alerte-danger {
+arrière-plan : #0b0508 !important ;
+couleur: #eadfc9 !important;}
+.alerte-succès {
+arrière-plan : #0b0508 !important ;
+couleur: #eadfc9 !important;}
+ 
+
+/*ZONE DE COMMENTAIRES
+C'est une question complexe. Veuillez lire attentivement.
+La couleur de la div#CommentBox correspond à la couleur de l'ENSEMBLE de la boîte, sans les commentaires. Il s'agit également du conteneur.
+.comment désigne les COMMENTAIRES EUX-MÊMES
+Si vous souhaitez des couleurs alternées, où l'une est légèrement plus foncée que l'autre, NE REMPLISSEZ RIEN.
+.comment REMPLISSEZ UNIQUEMENT LA div#commentBox
+
+L'icône .input.bad permet de supprimer les commentaires. Vous serez le seul à la voir.
+.input.bad a est la couleur du x à l'intérieur de
+*/
+
+div#commentBox {
+arrière-plan : #0b0508 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+couleur: #eadfc9 !important;}
+	
+.commentaire {     
+arrière-plan : #0b0508 !important ;
+bordure : aucune !important ;
+bordure inférieure : aucune !important ;
+bordure-radius: 0px !important;
+couleur : #eadfc9 !important ;
+text-align: center !important;}
+.text-muted {
+couleur: #eadfc9 !important; }
+
+entrée.mauvaise {
+arrière-plan : #0b0508 !important ;
+couleur: #eadfc9 !important;}
+input.bad a {
+couleur: #eadfc9 !important; }
+
+table#joueur.table hr {
+affichage : aucun !important ; }
+table#player.table div.xlarge {
+margin-top: 10px !important; }
+
+ 
+/* PANNEAUX LATÉRAUX
+
+Vous pouvez utiliser https://www.transparenttextures.com/ pour donner une texture à vos arrière-plans de panneaux, vos barres de progression, et presque tous les éléments de votre CSS !
+Veuillez noter que le CSS fourni par le site ne fonctionne PAS sur les images remplacées ; vous devrez utiliser une méthode particulière pour celles-ci.
+
+Si vous souhaitez appliquer une texture à vos panneaux, en utilisant la texture du carton comme exemple, le code ressemblera à ceci :
+.panel {
+couleur de fond : #1000f2 ;
+image de fond : url("https://www.transparenttextures.com/patterns/cardboard.png");
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+box-shadow: aucune !important; } */
+ 
+.panel {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+box-shadow: aucune !important; }
+   
+/*IMPRESSION / ALL PROGRESS Bars
+Sauf si vous colorez les barres de progression ci-dessous, elles resteront par défaut.
+aux couleurs que vous avez indiquées ici.
+Les barres hériteront également de la valeur border-radius de celle-ci, donc c'est
+Il n'est pas nécessaire de spécifier le rayon de bordure pour toutes les barres.
+.barre-de-progression {
+arrière-plan : #0b0508 !important ;
+border-radius: 0px !important; }
+
+/* ÉNERGIE */ .progress-bar-warning {
+arrière-plan : #0b0508 !important ;
+couleur: #eadfc9 !important;}
+/* FAIM */ .progress-bar-danger {
+arrière-plan : #0b0508 !important ;
+couleur: #eadfc9 !important;}
+/* EXP + SUCCÈS */ .progress-bar-success {
+arrière-plan : #0b0508 !important ;
+couleur: #eadfc9 !important;}
+
+/* Ceci est le texte qui indique Énergie : X % */
+.progress div {
+couleur: #eadfc9 !important; }
+
+/* Ceci est l'arrière-plan des barres de progression. */
+.progrès {
+arrière-plan : #0b0508 ;
+couleur : #eadfc9 !important ;
+border-radius: 0px !important; }
+
+/* Remplacement d'icône - Avertissement
+utilisé uniquement pour les rois affamés et le dernier jour des événements */
+
+img[src$="icon_warning.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+ 
+/* CHAT */
+
+bouton#label_currentChannel {
+bordure : aucune !important ;
+arrière-plan : #0b0508 !important; }
+
+div#chatMessageContainer {
+bordure : aucune !importante ; }
+
+.s-chat-message_timestamp {
+couleur: #eadfc9 !important; }
+
+.s-chat-sidebar #fraChatChannelMenu,
+bouton.channelSwitcher, bouton.channelSwitcher.active {
+    arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;	
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+box-shadow: aucune !important; }
+
+div.emoteList.active {
+  arrière-plan : #0b0508 !important ;
+  bordure : 1px solide #806019 !important ;
+  box-shadow: aucune !important;
+}
+div.emoteList.active::before {
+arrière-plan : #0b0508
+border-top: aucun !important;
+bordure : 1px solide #806019 !important; }
+
+/* MESSAGES ÉPINGLÉS - Ceci modifiera la couleur de fond de l'endroit où le personnel épingle les actualités */
+
+.s-chat-message__épinglé {
+couleur de fond : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !importante ; }
+
+/* Les messages impairs s'afficheront en haut de la conversation, les messages pairs s'afficheront un message sur deux en dessous. Si vous souhaitez que les deux couleurs soient identiques, faites
+Ne pas toucher aux spécifications paires/impaires */
+
+.s-chat-message {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure inférieure : #806019 !important ; }
+
+.s-chat-message:nth-enfant(pair) {
+arrière-plan : #0b0508 !important ;
+bordure : aucune !importante ; }
+.s-chat-message:nth-enfant(impair) {
+arrière-plan : #0b0508 !important ;
+bordure : aucune !importante ; }
+
+/* Ceci modifie la couleur des messages reçus. Oui, il faut bien préciser background-color
+Non, ça ne fonctionne pas si vous ne faites que de l'arrière-plan.
+8 mai : arrêtez de vous énerver */
+	
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+couleur de fond : #0b0508 !important ;
+bordure gauche : 6px solide #806019 !important ;
+couleur: #eadfc9 !important; }
+
+/* Ceci est le compteur de caractères, qui affiche X/150 */
+
+div#lblCharacterCounter {
+couleur: #eadfc9 !important; }
+
+/* Je ne me souviens plus à quoi ça sert, mais je sais que des choses étranges se produisent si on y touche
+Cela signifie qu'il ne faut PAS y toucher.
+Je suis tellement sérieux, arrête de toucher ça !
+html.nolayout {
+arrière-plan : aucun !important ; }
+
+/* FAPA, DYNASTIE DU ROI, ETC.
+L'extension .xsmall permet d'obtenir des boîtes FAPA de même longueur.
+La propriété div.left contrôle à la fois la dynastie, les réalisations, la vitrine, le livre des scarabées ET
+boutons consulter les demandes de reproduction, consulter le journal utilisateur et consulter l'historique des attaques */
+ 
+.fonctionnalité {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : 3px double #806019 !important ;
+border-radius: 0px !important; }
+
+div.gauche {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+border-radius: 0px !important; }
+
+.xsmall {
+taille de police : 14px !important ; }
+ 
+/* INFOS LION
+Tableau - le fond de votre table. Vous pouvez le rendre uni en remplaçant
+rgba(0, 0, 0, 0.0) avec un code HEX, ou en remplaçant le 0.0 par un 1.0 */
+ 
+.tableau {
+arrière-plan : rgba(0, 0, 0, 0.0);
+bordure : aucune !important ;
+effondrement de la frontière : séparer ;
+bordure-radius: 0px; }
+
+/* .top est l'endroit où le nom de votre roi est affiché
+.bottom est l'endroit où s'affiche le nombre de mutations au sein de votre groupe.
+c'est un en-tête sur deux dans votre tanière, comme une table d'entraînement, récupérer les lions de gauche,
+modifier les détails, etc. */
+
+.haut, .bas, th {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+border-radius: 0px !important; }
+
+/* Ceci supprime le soulignement sous le lien « X mutations dans votre fierté »
+Si cela vous convient, vous pouvez simplement supprimer le code situé sous ce */
+
+.bottom a:visité, .bottom a {
+text-decoration: aucune !important;}
+
+/* La propriété table.left sera utilisée par les sections situées à gauche du panneau « Modifier vos informations » une fois celui-ci ouvert.
+.inner-table .left est utilisé par le tableau qui affiche les noms des sections de
+des informations sur votre repaire, comme votre territoire, les statistiques de votre roi, etc.
+La propriété `.inner-table .right` est utilisée par les encadrés situés à côté des informations du roi, qui affichent les informations proprement dites.
+ 
+.table .left {
+arrière-plan : #0b0508 ;
+border-radius: 0px !important; }
+
+.inner-table .left {
+arrière-plan : #0b0508 !important ;
+border-radius: 0px !important; }
+
+.inner-table .right {
+arrière-plan : #0b0508 !important ;
+bordure-radius: 0px !important;
+couleur: #eadfc9 !important; }
+
+.droite_impaire {
+arrière-plan : aucun !important ; }
+
+/* TITRES PERSONNALISÉS KING
+Codes créés par Pandora #144118  
+Les codes peuvent être modifiés, utilisés dans le cadre de commandes ou à des fins personnelles.
+Veuillez ne pas supprimer le crédit
+
+Remarque : vous pouvez utiliser les deux, l'un ou l'autre.
+Si vous ne souhaitez pas les utiliser, supprimez simplement cette section.
+N'utilisez pas d'apostrophes (') dans le texte, cela perturbe le code.
+*/
+ 
+/* TITRE CUSTOM KING - APRÈS */
+ 
+#about > tbody > tr:nth-child(1) > td > div::after {
+    contenu :', TEXTE';
+    taille de police : 17 px ;
+    
+}
+ 
+/* TITRE CUSTOM KING - AVANT */
+ 
+#about > tbody > tr:nth-child(1) > td > div::before {
+    contenu : 'TEXTE';
+    taille de police : 17 px ;
+    
+}
+
+/* REMPLACEMENTS D'IMAGES D'ICÔNES DEN - Ceux-ci remplacent les images personnalisées affichées à côté des messages, des échanges, etc.
+Si vous ne souhaitez pas que ces éléments soient modifiés, ne modifiez tout simplement pas cette partie.
+Les noms sont assez explicites.
+Vous pouvez également les modifier si vous souhaitez ajouter des effets à VOTRE image de joueur et ne pas les voir apparaître sur ces images.
+
+img[src$="icon_den_message.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+img[src$="icon_den_gift.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+img[src$="icon_den_trade.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+img[src$="icon_den_wishlist.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+img[src$="icon_den_viewtrade.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+img[src$="icon_den_gift.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+img[src$="icon_den_block.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+img[src$="icon_den_friend.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+img[src$="donator.png"] {
+contenu : url('lien image') !important ;
+largeur: 24px !important; }
+
+/* OPACITÉ DU LION ET DE L'AVATAR DE L'UTILISATEUR */
+   
+div#lion_image {
+opacité : 1,0 ;
+rayon de bordure : 50 % ;
+débordement : caché ; }   
+image du joueur de table {
+opacité : 1,0 ;
+bordure-radius: 50%; }
+
+/* REMPLACEMENT DU LOGO LIODEN - Vous pouvez utiliser n'importe quelle image, mais la taille 192x120 fonctionne mieux.
+Sinon, votre barre de navigation risque d'avoir une apparence étrange.
+192x120 */
+   
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+affichage : aucun ;}
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a::after {
+contenu : url('LIEN IMG'); }
+ 
+/* ZONES DE TEXTE ET BOUTONS -
+Tous les champs de texte et les boutons auront la couleur que vous indiquerez ici.
+Vous pouvez les séparer simplement en copiant-collant les noms et le code CSS associé.
+Par exemple, pour que les caractères d'entrée soient rouges tandis que tout le reste est blanc, cela ressemblerait à ceci :
+input {background: red !important;}
+textarea, select, button.button, a.btn.btn-default.button {background: white !important;} */
+ 
+champ de saisie, zone de texte, liste déroulante, bouton.bouton,
+a.btn.btn-default.button {
+arrière-plan : #0b0508 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+couleur : #eadfc9 !important ;
+text-shadow: none !important; }
+ 
+/* NOMS DES GROTTES - modifie la couleur de l'endroit où les noms des grottes sont affichés */
+ 
+.grille-cave,
+.mound-grid {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+border-radius: 0px !important; }
+
+/* COUVERTURES DE GROTTES ET DE TERREAUX
+largeur : 240
+hauteur : 120 (60 pour la demi-taille - comme la bannière gigogne)
+Le premier contrôle tous les emplacements des grottes, même les vides.
+Si vous souhaitez de grandes icônes de grottes (comme celles-ci : https://images2.imgbox.com/26/21/3qjfGg8U_o.png), utilisez simplement un lioden
+fond ou une image de taille équivalente (640x500)
+Vous pouvez également modifier les tailles des éléments imbriqués, non triés, etc., pour qu'elles soient identiques aux autres tailles.
+Les monticules de coléoptères mesurent 130x80px
+Vous pouvez copier-coller pour ajouter d'autres grottes ou monticules que ceux fournis.
+*/
+
+div.cave-grid>img {
+contenu : url('https://static.lioden.com/images/items/Amusement/nestingbundle.png') !important ;
+largeur : 75 px ;
+hauteur : 75px; }
+
+a[href$="CAVEID"]>div.cave-grid>img {
+contenu : url('IMG LINK') !important ;
+largeur : 258px !important ;
+hauteur : auto !important; }
+a[href$="CAVEID"]>div.cave-grid>img {
+contenu : url('IMG LINK') !important ;
+largeur : 258px !important ;
+hauteur : auto !important; }
+a[href$="CAVEID"]>div.cave-grid>img {
+contenu : url('IMG LINK') !important ;
+largeur : 258px !important ;
+hauteur : auto !important; }
+
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+	contenu : url('IMG LINK') !important ; }
+a[href$="unsorted.php?id=USERID"]>div.cave-grid>img{
+contenu : url('IMG LINK') !important ;
+largeur : 75 px ;
+hauteur : 75px;}
+a[href*="lionoverview.php?id=USERID"]>div.cave-grid>img {
+contenu : url('IMG LINK') !important ;
+largeur : 75 px ;
+hauteur : 75px; }
+
+a[href$="unsorted-beetles.php?id=USERID"] img {
+contenu:url('LIEN IMG') !important;
+taille de fond : couverture ;
+largeur : 100 % ;
+hauteur : automatique ; }
+
+a[href$="mound.php?id=MOUNDID"] img {
+contenu:url('LIEN IMG') !important;
+taille de fond : couverture ;
+largeur : 100 % ;
+hauteur : automatique ; }
+
+/* Codes créés par Pandora #144118 et Kat .:Red Lion of Voltron:. #94329
+Les codes peuvent être modifiés, utilisés dans le cadre de commandes ou à des fins personnelles.
+Veuillez ne pas supprimer le crédit
+*/
+ 
+/* DYNASTIE DU ROI */
+img[src$="ancestors.jpg"] {
+    contenu:url('LINK')!important;
+    largeur:185px!important; }
+ 
+/* DYNASTIE DE L'ORGUEIL */
+img[src$="ancestorsfem.png"] {
+    contenu:url('LINK')!important;
+    largeur:185px!important; }
+ 
+/* RÉALISATIONS */
+img[src$="achievements.jpg"] {
+    contenu:url('LINK')!important;
+    largeur:185px!important; }
+ 
+/* PRÉSENTATION */
+img[src$="showcase/banner.png"] {
+    contenu:url('LINK')!important;
+    largeur:185px!important; }
+
+
+/* COMPATIBILITÉ GROTTE
+featured-lion modifie les couleurs derrière votre lion mis en avant, c'est-à-dire la bande de texte où
+Il est écrit « lion vedette : NOM »
+L'image source de la grotte par défaut modifie l'image derrière votre lion. Elle n'affichera pas de décoration.
+
+La table #pride.table contrôle l'emplacement d'affichage des noms de vos lions. Nous ne fournissons qu'une valeur de couleur.
+Vous pouvez le faire ici, mais vous pouvez également modifier l'arrière-plan en ajoutant une valeur d'arrière-plan.
+Les valeurs a et a:visited concernent les liens. Cela permettra aux noms de vos lions d'avoir la même couleur que n'importe quel autre élément.
+couleur que vous avez définie pour le texte
+table#pride.table .xsmall rétablit simplement la taille normale du sous-texte du lion, puisque nous avons modifié tout
+.xsmalls précédemment lors de la correction de FAPA. Vous pouvez supprimer cette ligne si vous souhaitez un texte plus grand. */
+
+.lion-vedette {
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+marge intérieure : 0 ;
+marge : 0 auto ;
+largeur maximale : 640 px ;
+police-weight: gras;
+taille de police : 14px ; }
+
+img[src*="cave/default"] {
+contenu: url('IMG LINK') !important;}
+
+table#pride.table, table#pride.table a, table#pride.table a:visité {
+couleur: #eadfc9 !important; }
+
+table#pride.table .xsmall
+{font-size: 12px !important;}
+
+/* Ces commandes modifient les flèches qui permettent de naviguer vers la page suivante dans les grottes. Si vous ne souhaitez pas les modifier,
+Supprimez cette section de code.
+Les icônes fléchées mesurent 50x30px */
+
+img[src$="arrow.png"] {
+contenu: url('lien image') !important;}
+img[src$="arrowgrayleft.png"] {
+contenu: url('lien image') !important;}
+
+/* Ceci est entièrement facultatif et peut vous aider à ajouter une texture sur votre lion principal !
+Veuillez utiliser https://www.transparenttextures.com/ pour trouver votre image
+Il serait tout de même préférable de réhéberger l'image par souci de cohérence, au cas où cette page deviendrait inaccessible, mais le site
+Vous pouvez utiliser le CSS prévu à cet effet en le copiant-collant. Veillez à ne pas copier-coller par-dessus le filtre, sinon l'image sera unie.
+Vous pouvez modifier l'opacité à n'importe quelle valeur comprise entre 0 et 1, sauf si elle est égale à 1,0, car l'image sera alors opaque.
+Si vous ne souhaitez pas cela, supprimez cette section de code.
+
+Vous pouvez également utiliser le CSS fourni par les textures transparentes pour donner de la texture à d'autres éléments !
+
+div.lion-image-block>img[src$="blank.png"] {
+couleur de fond : #b98214 !important ;
+    image de fond : url("LIEN") !important ;
+filtre : opacité(0,2) !important;}
+
+/* ICÔNES DE NOTES DE BAS DE PAGE PERSONNALISÉES - CRÉÉES PAR PANDORA
+ Codes créés par Pandora #144118  
+Les codes peuvent être modifiés, utilisés dans le cadre de commandes ou à des fins personnelles.
+Veuillez ne pas supprimer le crédit
+*/
+
+/* NOTE DE BAS DE PAGE - MUT */
+img[src$="footmut.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+
+/* NOTE DE BAS DE PAGE - CHASSE */
+img[src$="foothunt.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+
+/* NOTE DE BAS DE PAGE - HÉRITIER */
+img[src$="footheir.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+
+/* NOTE DE BAS DE PAGE - RACE/CŒUR */
+img[src$="footbreed.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+
+/* NOTE DE BAS DE PAGE - CROIX/X */
+img[src$="footx.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+
+/* NOTE DE BAS DE PAGE - BIOGRAPHIE/LIVRE */
+img[src$="footbio.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+
+/* NOTE DE BAS DE PAGE - INFERTILE/CŒUR BRISÉ*/
+img[src$="footinfertile.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+
+/* Ceci modifie la couleur du « badge », c'est-à-dire ce qui affiche les notifications de la boîte de réception &
+jours avant les chaleurs des lionnes */
+
+.badge {
+arrière-plan : #0b0508 !important ;
+couleur: #eadfc9 !important; }
+	
+/ * PAS DE SOULIGNE DES LIENS - Ceci supprime le soulignement des liens en bas de page,
+et supprime les soulignements des liens dans « Modifiez vos informations » */
+		
+.footer a:link, .footer a:visited, .footer a:active {
+border-bottom: none !important; }
+
+td.bottom a, th a {
+border-bottom: none !important; }
+
+/* BOÎTES
+Ne donnez pas de fond au conteneur.
+Les cases 1, 2 et 3 peuvent être répétées autant de fois que nécessaire, assurez-vous simplement de bien les fermer.
+Le code HTML de la boîte devrait ressembler à ceci :
+<div class="boxcontainer"><div class="Box1">texte</div></div>
+<div class="boxcontainer"><div class="Box3">texte</div><div class="Box2">texte</div></div> */
+
+.boxcontainer {
+arrière-plan : aucun ;
+hauteur : 75px ;
+marge intérieure : 0 px ;
+affichage : bloc ;
+justifier-contenu : centre ;
+transition: 1s }
+.boxcontainer:hover {
+hauteur : 250px; }
+   
+.Box1 {
+flotter : gauche ;
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+marge intérieure : 5 px ;
+flotter : gauche ;
+hauteur : 75px ;
+largeur : 100 % ;
+débordement : caché ;
+marge inférieure : 10px ;
+transition: 1s }   
+.Box1:survol {
+débordement-y : automatique ;
+hauteur : 250px; }
+   
+.Box2 {
+flotter : droite ;
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+marge intérieure : 5 px ;
+flotter : droite ;
+hauteur : 75px ;
+largeur : 30 % ;
+débordement : caché ;
+marge inférieure : 10px ;
+transition: 1s }   
+.Box2:hover {
+débordement-y : automatique ;
+hauteur : 250px; }
+	
+.Boîte3 {
+flotter : droite ;
+arrière-plan : #0b0508 !important ;
+couleur : #eadfc9 !important ;
+bordure : aucune !important ;
+bordure-radius: 0px !important;
+marge intérieure : 5 px ;
+flotter : droite ;
+hauteur : 75px ;
+largeur : 65 % ;
+débordement : caché ;
+marge inférieure : 10px ;
+transition: 1s }   
+.Box3:hover {
+débordement-y : automatique ;
+hauteur : 250px; }
+
+/* BOÎTES UNIQUEMENT POUR MOBILES
+Ces éléments ne s'afficheront que sur mobile. Utilisez cette option si vous souhaitez un encadré plus simple pour les appareils mobiles.
+Le code HTML de la boîte mobile devrait ressembler à ceci :
+<div class="mobilebox">texte</div>
+Si vous ne souhaitez pas de boîtes réservées aux mobiles, supprimez tout ce qui se trouve en dessous et au-dessus des couvertures de grottes.
+
+.mobilebox {
+flotter : centre ;
+arrière-plan : #0b0508 !important ;
+bordure : 1px solide #806019 !important ;
+bordure-radius: 0px !important;
+couleur : #eadfc9 !important ;
+marge : 10px ;
+marge intérieure : 10px ;
+flotter : centre ;
+hauteur : 155px ;
+largeur : 80 % ;
+débordement : automatique ;
+transition: 1s }
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+
+		.Box1, .Box2, .Box3, .boxcontainer {
+			affichage : aucun !important ;
+		affichage : bloc !important ; }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+
+		.Box1, .Box2, .Box3, .boxcontainer {
+			affichage : aucun !important ;
+		}
+
+	}
+
+	@media only screen and (max-width: 991px) and (min-width: 768px) {
+
+		.Box1, .Box2, .Box3, .boxcontainer {
+			affichage : aucun !important ;
+		}
+
+	}
+
+	@media only screen and (max-width: 767px) {
+
+		.Box1, .Box2, .Box3, .boxcontainer {
+			affichage : aucun !important ;
+		}
+}
+
+@media screen and (min-width: 1200px){
+
+		.mobilebox, .mobcontainer {
+			affichage : aucun !important ;
+		}
+}
+
+.mobilebox, .mobcontainer {
+affichage : bloc !important ; }
+.Box1, .Box2, .Box3, .boxcontainer {
+affichage : aucun !important ; } }
+
+@media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            affichage : bloc !important ;
+        }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    affichage : bloc !important ;
+}
+
+@media only screen and (min-width: 1200px) {
+        div.quote {
+            largeur : 790 px ;
+        }
+    }
+
+/* Ce sont de jolis petits codes d'amélioration de la qualité de vie, bravo à leurs créateurs !
+
+Codes créés par Pandora #144118 et Kat .:Red Lion of Voltron:. #94329
+Les codes peuvent être modifiés, utilisés dans le cadre de commandes ou à des fins personnelles.
+Veuillez ne pas supprimer le crédit
+
+Note de Jes :
+Pour les membres ayant un code en ligne et hors ligne, veuillez n'en remplir qu'un seul.
+Si vous souhaitez une couleur unie, remplissez uniquement le champ « arrière-plan ».
+Si vous souhaitez une image, remplissez uniquement le champ « contenu ».
+ou remplissez les deux, je ne peux pas vous en empêcher mais ça va être un vrai bordel */
+
+/* MEMBRE EN LIGNE */
+.membre-en-ligne {
+    arrière-plan : #0b0508 ;
+    contenu:url('aucun')!important;
+	bordure-radius: 0px;
+    largeur:40px!important;
+    hauteur : 40 px ;
+	marge:-10px;
+	marge gauche : 10px ; }
+	
+/* MEMBRE HORS LIGNE */
+.membre-hors-ligne {
+    arrière-plan : #0b0508 ;
+    contenu:url('aucun')!important;
+	bordure-radius: 0px;
+    largeur:40px!important;
+    hauteur : 40 px ;
+	marge:-10px;
+	marge gauche : 10px ;
+	filtre : saturer(0 %) ; }
+
+/* TOUTES LES ICÔNES DE DEVISES - également par kat et pandora
+Si vous ne souhaitez pas modifier les icônes des devises, supprimez simplement cette section de code.
+ 
+/* SCARABÉE DORÉ */
+img[src$="gold.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* SILVER BEETLE */
+img[src$="silver.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+	
+/* MONNAIE DE L'ÉVÉNEMENT */
+ 
+/* JAN */
+img[src$="dermestid.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* FÉV */
+img[src$="heartshell.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* MARS */
+img[src$="beetlerhino.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* AVRIL */
+img[src$="easteregg.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+ 
+/* PEUT */
+img[src$="beetlemant.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* JUIN */
+img[src$="khepri.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* JUILLET - Éclats de météorite */
+img[src$="shard.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* JUILLET - NOYAUX AXION */
+img[src$="axion.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* AOÛT - OS DE CHAROGNE */
+img[src$="beetlecarrion.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* AOÛT - OS SECS */
+img[src$="bone.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* SEPT - SCARABÉES BIJOUX */
+img[src$="beetlejewel.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* SEPT - JETONS ELDRITCH */
+img[src$="eldritch.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* OCT - SCARABÉES SANGUINS */
+img[src$="beetleblood.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* OCT - PLUMES DE NEPHILIM */
+img[src$="nephelinefeather.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* OCT - ÉCAILLES DE DÉMON */
+img[src$="demonicscale.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* NOV */
+img[src$="scarabbeetle.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+ 
+/* DÉC */
+img[src$="stinkbug.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+	
+/* CHASSE AU TRÉSOR */
+img[src$="icon_doubloon.png"] {
+    contenu:url('LINK')!important;
+    largeur:20px!important; }
+	
+/* SI VOUS SOUHAITEZ UN CURSEUR PERSONNALISÉ, RENDEZ-VOUS SUR https://www.cursors-4u.com/
+COPIEZ ET COLLEZ LE CODE FOURNI APRÈS AVOIR CLIQUÉ SUR LE BOUTON « OBTENIR LE CODE HTML/CSS ».
+FAITES-LE CI-DESSOUS MAIS AVANT LE CRÉDIT */
+	
+/* CRÉDIT - ne touchez pas à cette partie, le code fonctionnera parfaitement */
+ 
+.breadcrumb::après {
+contenu : "modèle CSS par Katie (#106445) et Jester (#187561)" ;
+couleur : #eadfc9 ;
+position : absolue ;
+droite : 13 % ;
+z-index: 100; }
+		
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+        .breadcrumb::après {
+            droite : 20 % ;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
+        .breadcrumb::après {
+            droite : 20 % ;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::après {
+            droite : 22 % ;
+        }
+    }
+
+/* =========================================================
+   NENUPHAR — SANG ROYAL ET OR
+   Modification visuelle finale — modèle original conservé
+   ========================================================= */
+
+:racine {
+    --n-noir : #030203 ;
+    --n-black2: #0b0508;
+    --n-bourgogne : #26070d ;
+    --n-sang: #5c0b15;
+    --n-ruby : #8f1724 ;
+    --n-gold : #b8922e ;
+    --n-gold2 : #d7b84c ;
+    --n-crème : #eadfc9 ;
+}
+
+html, corps {
+    couleur de fond : #030203 !important ;
+    couleur: var(--n-crème) !important;
+}
+
+corps {
+    image de fond :
+        radial-gradient(ellipse à 50% -8%, rgba(143,23,36,.35), transparent 58%),
+        gradient linéaire(135deg, #030203 0%, #0b0508 36%, #3a080f 72%, #070304 100%) !important;
+    background-attachment: fixed !important;
+    taille de fond : couverture !important ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    famille de polices : 'Cinzel', Géorgie, serif !important ;
+    couleur: var(--n-gold2) !important;
+    text-shadow: 0 1px 2px #000, 0 0 9px rgba(215,184,76,.22) !important;
+}
+
+a:lien, a:visité {
+    couleur: var(--n-gold2) !important;
+}
+
+a:survol {
+    couleur : #f1dda0 !important ;
+    text-shadow: 0 0 8px rgba(215,184,76,.5) !important;
+}
+
+.conteneur.principal,
+.col-md-9 {
+    arrière-plan : transparent !important ;
+}
+
+.topbar, .navbar {
+    arrière-plan:
+        gradient linéaire(90deg, #050304, #350911 50%, #050304) !important;
+    bordure inférieure : 1px solide var(--n-gold) !important ;
+    box-shadow: 0 4px 18px rgba(0,0,0,.8) !important;
+}
+
+.panel, .feature, .Box1, .Box2, .Box3 {
+    arrière-plan:
+        gradient linéaire(145deg, rgba(7,4,6,.98), rgba(38,7,13,.96), rgba(7,4,6,.99)) !important;
+    bordure : 1px solide rgba(184,146,46,.62) !important ;
+    ombre portée :
+        0 5px 20px rgba(0,0,0,.72),
+        inset 0 1px 0 rgba(241,221,160,.06) !important;
+}
+
+.panel-heading, .top, th {
+    arrière-plan:
+        gradient linéaire(90deg, #120508, #420b13, #120508) !important;
+    couleur : #f1dda0 !important ;
+    bordure inférieure : 1px solide var(--n-gold) !important ;
+    famille de polices : 'Cinzel', Géorgie, serif !important ;
+}
+
+bouton, .btn, bouton.bouton, a.btn.btn-default.bouton {
+    arrière-plan : gradient linéaire (180°, #4a0b13, #180407) !important ;
+    couleur : #f1dda0 !important ;
+    bordure : 1px solide var(--n-gold) !important ;
+}
+
+bouton:survol, .btn:survol, bouton.bouton:survol, a.btn.btn-default.bouton:survol {
+    arrière-plan : dégradé linéaire (180°, #781421, #3a080f) !important ;
+    couleur : #fff0b0 !important ;
+    couleur de bordure : #d7b84c !important ;
+}
+
+entrée, zone de texte, sélection {
+    arrière-plan : #0d0507 !important ;
+    couleur : #eadfc9 !important ;
+    bordure : 1px solide #806019 !important ;
+}
+
+.progrès {
+    arrière-plan : #080405 !important ;
+    bordure : 1px solide #806019 !important ;
+}
+
+.barre-de-progression {
+    arrière-plan : gradient linéaire (90°, #3e070e, #7c101c, #b1202e) !important ;
+}
+
+::-webkit-scrollbar-track {
+    arrière-plan : #050304 !important ;
+}
+
+::-webkit-scrollbar-thumb {
+    arrière-plan : gradient linéaire (180°, #74101b, #3b080e) !important ;
+    bordure : 1px solide #806019 !important ;
+}
+
+hr {
+    bordure : 0 !important ;
+    hauteur : 1px !important ;
+    arrière-plan : dégradé linéaire (90°, transparent, #b8922e, transparent) !important ;
+}
+
+@media screen and (max-width: 600px) {
+    corps {
+        image de fond :
+            gradient linéaire(160deg, #030203 0%, #26070d 55%, #070304 100%) !important;
+        background-attachment: fixed !important;
+    }
+}
