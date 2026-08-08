@@ -7,10 +7,6 @@ body {
     background-color: #090304 !important;
     color: #d8c7c9 !important;
 }
-/* =========================================
-   LORD NÉNUPHAR — TEST
-   ========================================= */
-
-body * {
-    border-color: #8b1e2d !important;
+body {
+    background: #ff0000 !important;
 }
