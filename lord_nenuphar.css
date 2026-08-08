@@ -2,7 +2,7 @@
 made based off of katie's v2 free css template / should be considered v3 
 
 NOTE: THIS IS MADE TO BE AN ULTIMATE TEMPLATE 
-what does this mean this means there is a lot of stuff in here your average coder 
+what does this mean? this means there is a lot of stuff in here your average coder 
 just getting into coding css will not use. anyone can use this template, regardless of skill level, 
 but if you're unsure what something may be used for, it may not added with beginners in mind. 
 
@@ -36,23 +36,15 @@ border-radius - the roundness of the borders, for circular elements, set to 50%
 box-shadow - a shadow behind the element itself. you usually want this set to none.  
 */ 
 
-/* FONTS - Import from Google Fonts */
+/* FONTS - Import from Google Fonts */ 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('FONT LINK'); 
 
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #0f1115;
-  color: #f1f1f1;
-}
+body {font-family: INPUT HERE;} 
 
-.topbar {
-  font-family: 'Space Grotesk', sans-serif;
-}
+.topbar {font-family: INPUT HERE;} 
 
-.navbar {
-  font-family: 'Space Grotesk', sans-serif;
-}
+.navbar {font-family: INPUT HERE;} 
 
 /* BACKGROUNDS  
 The first one is for PC, the second is for mobile. You can also use an image in the second one 
