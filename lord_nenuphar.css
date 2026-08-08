@@ -41,3 +41,12 @@ body {
     border: 1px solid #4a151d !important;
     border-radius: 5px !important;
 }
+/* TEST B */
+
+body {
+    background-color: #090304 !important;
+}
+
+#main {
+    background-color: #18070a !important;
+}
